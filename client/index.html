@@ -18,9 +18,25 @@
         <h1> Send Amount </h1>
         <input type="text" id="send-amount" placeholder="Send Amount" />
         <input type="text" id="recipient" placeholder="Recipient" />
+        <div class="button" role="button" id="generate-signature">
+          generate signature
+        </div>
         <div class="button" id="transfer-amount">
           Transfer Amount
         </div>
+      </div>
+    </div>
+    <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <form action="/action_page.php" class="formContainer">
+          <h2>Secure Wallet Server</h2>
+          <label for="email">
+            <strong>private key</strong>
+          </label>
+          <input type="text" id="privateKey" placeholder="your private key" name="privateKey" required>
+          <button type="submit" class="btn" id="submit-button">Generate</button>
+          <button type="button" class="btn cancel" id="cancel-button">Close</button>
+        </form>
       </div>
     </div>
   </body>
